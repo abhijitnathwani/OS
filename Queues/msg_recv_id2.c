@@ -28,7 +28,7 @@ int main()
      * "name" 1234, which was created by
      * the server.
      */
-    key = 134;
+    key = 1134;
 
     if ((msqid = msgget(key, 0666)) < 0) {
         perror("msgget");

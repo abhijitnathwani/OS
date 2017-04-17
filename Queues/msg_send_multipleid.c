@@ -30,7 +30,7 @@ int main()
      * "name" 1234, which was created by
      * the server.
      */
-    key = 134;
+    key = 1134;
 
 (void) fprintf(stderr, "\nmsgget: Calling msgget(%#lx,\
 %#o)\n",
