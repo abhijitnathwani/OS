@@ -9,7 +9,7 @@ main ()
 {
   pthread_t thread1, thread2;
   char *message1 = "I am Thread 1";
-  char *message2 = "I am Thread 2";
+  
   int iret1=5, iret2=10;
   
   pthread_attr_t attr;

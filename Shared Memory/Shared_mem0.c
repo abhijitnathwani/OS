@@ -23,16 +23,16 @@ printf("Writing to shared memory\n");
 //buff="hello eitra";
 s=buff;
 strcpy(s,"hello eitra");
-for(i='a';i<='z';i++)
+/*for(i='a';i<='z';i++)
 {
 *s=i;
 s++;
 }
-s='\0';
+s='\0';*/
 printf("%s read from shared memory\n",buff);
 
-while(*buff!='*')
-sleep(1);
+//while(*buff!='*')
+//sleep(1);
 
 
 res=shmdt(buff);

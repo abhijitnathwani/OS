@@ -1,0 +1,9 @@
+1. Request a msgqueue with key=234. Input int data by ./msd_send1 in queue with type=1 and input char array by ./msg_send2 in same queue with type=2. You will require two receiving binaries as well. ./msg_recv1 will receive type=1 data and msg_recv2 will receive type=2 data from queue with key=234
+
+2. From queue with key=234 find out Permissions on queue, time of last message send and received, current number of byes in queue, current number of messages in queue, maximum no. of bytes in queue, PID of last receiving process from this queue and PID of last sending process to this queue.
+/*Hint: Explore the msgctl command. After getting answer for this question Do Experiment with all commands in msgctl and make demo applications for same.
+Explore msgid_ds, ipc_perm, msginfo structures sys/msg.h and sys/ipc.h*/
+
+3. From Shared memory with key=345 find out Permissions on Shared memory, time of last attach time and detached time, PID of creator of shared memory and PID of last attaching/detaching process to this Shared memory.
+/*Hint: Explore the shmctl command. After getting answer for this question Do Experiment with all commands in shmctl and make demo applications for same.
+Explore shmid_ds, shminfo from sys/shm.h*/

@@ -1,0 +1,12 @@
+a.  pthread_attr_init() 
+	The pthread_attr_init() function initializes the thread attributes
+       object pointed to by attr with default attribute values.  After this
+       call, individual attributes of the object can be set using various
+       related functions (listed under SEE ALSO), and then the object can be
+       used in one or more pthread_create(3) calls that create threads.
+
+       Calling pthread_attr_init() on a thread attributes object that has
+       already been initialized results in undefined behavior.
+
+
+       p
