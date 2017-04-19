@@ -1,0 +1,23 @@
+1. Try to create threads with default attribures. Explore them using top. Try to read current thread attributes using pthread_getattr_np().
+
+2. Try to set scope of thread as PTHREAD_SCOPE_SYSTEM and visulize the change. 
+
+3. Make thread detached and try to execute some function like print_message(). Make thread detached at the time of creation by using pthread_attr_setdetachstate() and also try to detach thread after it's creation using pthread_detach(). Compare their functionality.
+
+4. Understand working of pthread3.c and modify it such that it also display the thread's print messages on terminal	.
+
+5. Understand working of pthread_exit and return statements. Use them in your code. Explore it with valgrind leak-check tool. 
+
+6. Explore below functions from pthread library.
+	a. pthread_attr_init() / pthread_attr_destroy()
+	b. pthread_attr_setaffinity_np()/pthread_attr_getaffinity_np()
+	c. pthread_attr_setschedparam()/pthread_attr_getschedparam()
+	d. pthread_attr_setstackaddr()/pthread_attr_getstackaddr()
+	e. pthread_attr_setstack()/pthread_attr_getstack()
+	f. pthread_attr_setstacksize()/pthread_attr_getstacksize()
+	g. pthread_attr_setscope()/pthread_attr_getscope()
+
+Hint: Use following links for proper understanding. 
+
+http://man7.org/linux/man-pages/man3/pthread_attr_init.3.html
+https://users.cs.cf.ac.uk/Dave.Marshall/C/node30.html
