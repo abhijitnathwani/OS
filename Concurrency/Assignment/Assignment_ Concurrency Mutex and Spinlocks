@@ -1,0 +1,16 @@
+1. There is one linked list saving integer data. There are two threads T2 and T3, who try to delete nth node from list simultaneously. At some time t, T2 is trying to delete 2nd node and T3 trying to delete 3rd node. Consider the scenario and enlist the problems behind. Solve the problems.  
+
+Let list contains : 1 2 3 4 5 6
+T2 has to delete 2 and T3 has to delete 3. 
+
+
+2. Understand the Dekker's Algo (busywait5.c), Peterson's Algo(busywait6.c), Lamport's Bakery Algo, Szymanski's algo for software implementation of mutual exclusion. Implement remaining two in c with same busywait code model.
+
+3. Consider one queue of interger data. There is one producer thread and two consumer threads. Maximum size of queue is 50 nodes. Producer will produce node in queue untill at least one node is empty in queue and increment the count. Consumer threads will consume data from queue front and decrement the count. Enlist concurrency related issues in this scenario. Also Try to solve it using pthread_spin_lock() and pthread_mutex_lock. Compare there performance in terms of time. 
+Comment on operation of spinlock and mutex.
+
+4. I have two global variables A and B. A and B are shared between two threads. "mut1" is lock to ensure exclusive operation on A and "mut2" is lock for exclusive operation on B. Master thread creates two threads T1 and T2. T1 acquires "mut1" and then "mut2"; and releases in "mut2" then "mut1" order. T2 does exactly reverse for acquiring and releasing. In critical section T1 writes 1 to A and B and T2 writes 2 to A and B.
+
+(consider critical section is merge of A=1(or 2);B=1(or 2); statements)
+Try different order of locking and unlocking and explore nested mutex operations. 
+Enlist the problems in different arrangements.
