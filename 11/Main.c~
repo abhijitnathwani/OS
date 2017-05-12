@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include"Convert.h"
+
+void main()
+{
+	int iChoice;
+	do{
+		printf("1.Decimal to binary\n2.Decimal to Hexadecimal\n3.Decimal to Octal\n4.Exit\n");
+		scanf("%d",&iChoice);
+		switch(iChoice){
+			case 1:
+				dectobin();
+				break;
+			case 2:
+				dectohex();
+				break;
+			case 3:
+				dectooct();
+				break;
+			case 4:
+				break;
+			default:
+				printf("enter valid choice \n");
+
+		}
+	}while(iChoice!=4);
+}

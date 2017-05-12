@@ -1,0 +1,3 @@
+int dectobin();
+int dectohex();
+int decoct();

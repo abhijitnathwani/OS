@@ -1,0 +1,30 @@
+1) Explore and explain detailed use of sched_yield, CPU_ALLOC, CPU_ZERO, CPU_SET, sched_setaffinity, sched_getaffinity, sched_setscheduler, sched_getscheduler with prototypes and each options available. 
+You need to explore task_struct and sched_param strucures.
+
+2) Allocate CPU for different threads as thread attributes.
+
+3) Explain different performance indices for scheduler. Make relative analysis based on different performance parameters for scheduling policies: FCFS, RR, SPN, SRF, HRRF for below mentioned table of activities.
+Jobs 	Arrival time	Service Time
+A	0		4
+B	3		7
+C	4		3
+D	6		5
+E	8		2
+
+4) Explore short term , medium term and long term scheduler? In which condition each will be invoked? Compare based on frequency of invokation.
+
+5) What is preemptive and non preemptive scheduling?
+
+6) What is priority based scheduling? How policy helps in that?
+
+7) What is dispatcher? what it does?
+
+8) Explain Completely fair scheduler.
+
+9) Explain loosely coupled or distributed multiprocessor systems, Functionally specialized processors systems and Tightly coupled multi processor systems.
+
+10) What is granularity? What different levels of same specifies?
+
+11) Explain types of thread scheduling. a) load sharing, gang, dedicated, dynamic
+
+12) Which are the scheduler design issues with multiprocessor systems?

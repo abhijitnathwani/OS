@@ -1,0 +1,17 @@
+1. Can mutex be locked by same thread again who has already locked it? Give at least THREE use cases of it. Explore the concept of reentrant mutex.  
+
+Explore pthread_mutexattr_init, pthread_mutexattr_settype, pthread_mutex_init. Explore different mutex attributes. Enlist types of mutex.
+
+2. Implement readers -writers lock using mutex with 1) Readers having priority 2) Writers having priority and 3)unspecified priority.
+
+Explore the issues from three cases. 
+
+3. Explore the Read copy update lock. Try to implement it using mutex.
+Enlist the issues encountered. What is passive serialization?
+
+4. Use spinlock in all demo codes where you used mutex. And explore the difference between both. 
+
+5. Implement concurrent programming where two threds of execution increments the count initialized to 0. T1 increments count from 0 to 4 and from 7 to 10. T2 increments count from 4 to 7. Once count reaches 10; execution terminates. T1 and T2 also writes current count value with which updated it.
+
+6. Implement readers -writers lock using semaphore with 1) Readers having priority 2) Writers having priority and 3)unspecified priority.
+
