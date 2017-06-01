@@ -1,0 +1,65 @@
+/*Explore by setting different values for num_CPUs values and CPU_SET*/
+/*          You can see effect from /proc/<pid>/status               */ 
+/*             Try to run threads on multiple CPUs                   */
+#define _GNU_SOURCE
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <sched.h>
+#include <unistd.h>
+
+int funcFactorial(int);
+
+int count1 = 0;
+int count2 = 0;
+int times = 100000; // need set enough big to see effecting
+
+int pid1,pid2,pid3,pid4;
+
+
+int main(void) 
+{
+
+	char *message1 = "Thread 1";
+	char *message2 = "Thread 2";
+	int iret1, iret2;
+
+	//Setting CPU affinity
+	int num_CPUs = 3; // only run on 1 core
+	cpu_set_t mask1,mask2,mask3,mask4;
+
+	/* CPU_ZERO initializes all the bits in the mask to zero. */
+	CPU_ZERO(&mask1);
+/*	CPU_ZERO(&mask2);
+	CPU_ZERO(&mask3);
+	CPU_ZERO(&mask4);*/
+
+	/* CPU_SET sets only the bit corresponding to cpu. */
+	CPU_SET(0, &mask1);
+	/*CPU_SET(0, &mask2);
+	CPU_SET(0, &mask3);
+	CPU_SET(0, &mask4);*/
+
+
+
+	if(((pid1=fork()) && (pid2=fork()) && (pid3=fork()) && (pid4=fork())) == 0)
+	{
+		///printf("I am child with PID: %d and PPID: %d \n",getpid(),getppid());
+		if (sched_setaffinity(0, sizeof(mask1), &mask1) == -1)
+		{
+			printf("Could not set CPU Affinity \n");
+		}
+		printf("Factorial from PID: %d is %d\n",getpid(),funcFactorial(10));
+
+	}
+	
+	//while(1);
+	return 0;
+}
+int funcFactorial(int n)
+{
+    if (n >= 1)
+        return n*funcFactorial(n-1);
+    else
+        return 1;
+}

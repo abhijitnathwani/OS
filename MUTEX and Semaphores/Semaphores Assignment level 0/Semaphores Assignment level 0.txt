@@ -1,0 +1,10 @@
+1. You have studied concept of semaphore. Also you are aware of c library functions for semaphores. Now explore semaphores from /sys/sem.h ( from where you explored queues and shared memory). Enlist system calls related to semaphore. 
+
+2. Implement Producer consumer example between processes using semaphore. Consider There is some producing processes and some consuming processes.
+Implement using both; c library functions and system calls.
+
+3. Consider the problem of readers writers solved in previous assignment with THREE different cases. Implement it using system calls.
+
+4. There is a bus reservation system. A bus has 52 seats total. There are 5 ticket sellers on the bus stop. A seat can be allocated to single passenger. Ensure it using Binary Semaphore. Also Implement the same using mutex. Differentiate mutex with binary semaphore.  
+
+

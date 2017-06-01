@@ -1,0 +1,15 @@
+1) Make Message queue based server, which receives file name from client and sends back content of file to client.(kind of file transfering server on same system) It should be able to serve multiple client requests at the same time. 
+
+2) Make server who receives requests from multiple clients and executes their requested code simultaneously on client side.(The executables don't have any runtime input to be taken).
+
+3) Extend previous version where server can take runtime inputs from client, process them and send back results to client.
+
+3) Make server who receives different kinds of requests from client
+i) execute something
+ii) read data from database
+iii) send some file to client
+and is able to serve them simultaneously.
+
+4) Extend the previous version such that if one server is overloaded; it calls for other server and other server fulfills the client requirement. Ensure at one time client request goes to only one server.  (virtual servers running on single server kind of VMs)
+
+5) Implement software as a service (SaaS). You as a client have some identity for software. Based on identity it will run that software for you on client side.

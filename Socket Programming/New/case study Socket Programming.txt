@@ -1,0 +1,32 @@
+*****************************Case Study 1***********************************
+
+Consider a multiplex ( Multiplex_name, Multiplex_address ).
+The multiplex shall have multiple screens ( SCR1, SCR2,…). SCR1(Screen_id, Seating capacity, Seating Capacity_Gold, SeatingCapacity_Silver, SeatingCapacity_Platinum).
+The screen shall be running multiple shows (show_id, show_timing, movie name). The # of shows may be different for different screens.
+Each Screen shall have fixed # of tickets (ticket_id, show_id, rate, seat#).
+The multiplex shall have 3 window counter (window_id, window_status). There is option of less than 3 windows operational.
+ 
+Customers can book ticket via 3 modes - @ window, online ticketing, tele booking.
+ 
+These 3 modes shall be 3 different client threads. The multiplex is server. These threads shall communicate to server via sockets. The medium of communication between client & server should be using message queue. The client threads shall use mutex to get access to windows. The # of windows shall be semaphore to service the thread. The tickets shall be issued to successful communication with thread and availability of ticket.
+ 
+Use appropriate data structure for multiplex, screens, movie, tickets, customer, windows. User pointers, function pointers, linked lists, union, enumeration by proper architecting this problem statement.
+
+
+
+*****************************Case Study 2***********************************
+
+
+Make an FTP server. Make client part for same. Run client and server on different machines. 
+FTP server provides below mentioned functionalities:
+FTP server features needed:
+- Show all available files
+- Clients must be able to request for specific files for download files from server.
+- Should be able to service multiple clients simultaneously.
+- There should mechanism to validate 'file correctness' once client downloads the file.
+- At client show % of file downloaded
+- Authentication feature needed
+- Should be able to start/pause/continue/restart
+- File Upload feature
+- if requested file doesn't exist; gives appropriate error message to client.
+

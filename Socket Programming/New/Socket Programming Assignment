@@ -1,0 +1,24 @@
+1. Using tcpdump explain connection termination in tcp with appropriate packets.
+
+2. ifconfig shows MTU size. Try setting buffer size greater than that for respective interfaces; and show how data transmission takes place. Read mannual pages of tcp and udp. 
+
+3. Explore the optional data in tcp header.
+
+4. Explore about netstat command.
+How you can see all listening ports, all active connections, all kernel routing information, disable dns lookup?
+
+5. How selective ack can be send? and how you can debug it?
+
+6. What /proc/sys/net/ipv4/tcp_wmem and /proc/sys/net/ipv4/tcp_rmem tells about?
+
+7. Make client server communicating on UDP.
+
+8. Make concurrent echo server which can serve multiple clients simultaneously. 
+
+9. Make daytime server where client requests day time and server sends current day time in appropriate formate to client.  
+
+10. Explore following networking APIs or structures and make one demo application out of all.
+
+socket(), bind(), connect(), close(), getaddrinfo(), freeaddrinfo(), gai_strerror(), gethostname(), gethostbyname(), gethostbyaddr(), getservbyname(), getnameinfo(), getpeername(), errno, fcntl(), htons(), htonl(), ntohs(), ntohl(), inet_ntoa(), inet_aton(), inet_addr, addrinfo, inet_ntop(), inet_pton(), listen(), perror() , strerror(), poll(), recv(), recvfrom(), select(), setsockopt(),  getsockopt(), send(), sendto(), shutdown(), hostent
+
+11. Explore netstat, traceroute, tcpdump and nmap command with all switches.

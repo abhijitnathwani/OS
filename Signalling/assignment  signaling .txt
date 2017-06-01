@@ -1,0 +1,11 @@
+1. Explore signal.h and different types of signal macros.
+
+2. Explore signal and kill library functions. 
+
+3. Write some signal handler for interrupt and abort signals. Write some test application for the same.
+
+4. Write c code which while interrupted using CTRL+C creates new process doing same work and terminates the current one.
+
+5. Write c code which prints abort message and increments sig_count when receives abort signal. When the count reaches 5; it actually aborts the process.
+
+6. Write one application which creates new process on receiving interrupt signal and terminates all processes on receiving SIGABRT signal.
